@@ -1,0 +1,19 @@
+
+
+/* --- 공통 섹션 스타일 --- */
+.section {
+  min-height: 100vh;
+  padding: 120px 50px 50px; /* 헤더에 가리지 않도록 위쪽 여백(120px) 넉넉히 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #fff;
+  border-bottom: 3px solid #00ff00; /* 포인트 컬러 밑줄 */
+  padding-bottom: 10px;
+}
+

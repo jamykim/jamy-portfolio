@@ -1,0 +1,143 @@
+/* --- Curriculum 섹션 배경 --- */
+.curriculum-section {
+  background-color: #111; /* 프로젝트가 #1a1a1a 니까 교차로 어둡게! */
+}
+
+/* --- 타임라인 전체 컨테이너 --- */
+.timeline-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px; /* 왼쪽 선이 들어갈 공간 확보 */
+}
+
+/* 왼쪽에 쭉 내려오는 타임라인 기둥(선) */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #333; /* 어두운 회색 선 */
+}
+
+/* --- 개별 항목 (카드) --- */
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0; /* 마지막 항목은 여백 없애기 */
+}
+
+/* 타임라인 기둥에 찍히는 동그란 점 */
+.timeline-dot {
+  position: absolute;
+  top: 5px;
+  left: -37.5px; /* 선의 중앙에 맞추기 위해 왼쪽으로 이동 */
+  width: 18px;
+  height: 18px;
+  background-color: #00ff00; /* 포인트 컬러 */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* 초록색 빛 번짐 */
+}
+
+/* --- 내용물 영역 --- */
+.timeline-content {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border: 1px solid #222;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(10px); /* 마우스 올리면 살짝 오른쪽으로 밀리는 효과 */
+  border-color: #444;
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.timeline-title {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 진행 중 배지 */
+.curriculum-badge {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.curriculum-badge.ing {
+  background-color: #facc15;
+  color: #000;
+}
+
+.timeline-org {
+  font-size: 1.05rem;
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.timeline-tags span {
+  background-color: #2a2a2a;
+  color: #bbb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.timeline-desc {
+  font-size: 1.05rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* 950시간 풀스택 과정 리스트 스타일 */
+.curriculum-tasks {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.curriculum-tasks li {
+  color: #ccc;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.curriculum-tasks li::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #555;
+}
+
+.curriculum-tasks li strong {
+  color: #fff;
+}

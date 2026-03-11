@@ -1,0 +1,154 @@
+
+/* --- 🔥 스킬 한눈에 보기 (배지 섹션) 스타일 🔥 --- */
+.tech-summary-box {
+  background-color: #222; /* 기존 박스보다 살짝 다르게 포인트 */
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px; /* 상세 리스트와의 간격 */
+  border: 1px solid #333;
+}
+
+.tech-row {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px dashed #444; /* 점선으로 구분 */
+}
+
+/* 마지막 줄은 밑줄 없애기 */
+.tech-row:last-child {
+  border-bottom: none;
+}
+
+.tech-category {
+  width: 180px; /* 카테고리 이름 영역 고정 */
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ddd;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-icon {
+  margin-right: 10px;
+  font-size: 1.45rem; /* 글씨보다 아이콘을 아주 살짝 크게 */
+  color: #aaa; /* 아이콘 기본 색상 (원하면 다른 색상으로 변경 가능) */
+}
+
+.skill-icon {
+  color: #00ff00; /* 포인트 컬러인 초록색 유지 */
+  margin-right: 12px;
+  font-size: 1.45rem; 
+}
+
+/* 알약 모양 배지 디자인 */
+.badge {
+  padding: 6px 16px;
+  border-radius: 20px; /* 완전 둥근 모양 */
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+/* 마우스 올리면 살짝 커지는 효과 */
+.badge:hover {
+  transform: scale(1.05);
+}
+
+/* --- Skills 섹션 상세 리스트 스타일 --- */
+
+.skills-section {
+  background-color: #111;
+}
+
+.skills-detailed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* 각 카테고리 사이 간격 */
+  max-width: 900px;
+  width: 100%;
+  background: #1a1a1a;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.skill-group-title {
+  font-size: 1.8rem;
+  color: #00ff00; /* 카테고리 제목 포인트 컬러 */
+  margin-bottom: 25px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-name {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-details {
+  list-style-type: none; /* 기본 점 모양 없애기 */
+  padding-left: 15px;
+}
+
+.skill-details li {
+  font-size: 1.05rem;
+  color: #bbb;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  position: relative;
+  word-break: keep-all;
+}
+
+/* 리스트 앞에 예쁜 하이픈(-) 달아주기 */
+.skill-details li::before {
+  content: "-";
+  position: absolute;
+  left: -15px;
+  color: #555;
+}
+
+.skill-details li strong {
+  color: #ddd;
+}
+
+/* --- 모바일 화면 대응 --- */
+@media screen and (max-width: 768px) {
+  .skills-detailed-container {
+    padding: 30px 20px;
+  }
+
+  .tech-summary-box {
+    padding: 20px 15px;
+  }
+
+  .tech-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tech-category {
+    width: auto;
+    border-bottom: 2px solid #00ff00; /* 모바일에서는 제목 강조 */
+    padding-bottom: 5px;
+  }
+}

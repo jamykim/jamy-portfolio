@@ -1,0 +1,82 @@
+/* --- About 섹션 스타일 --- */
+.about-section {
+  background-color: #1a1a1a;
+}
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  max-width: 1400px;
+  width: 100%;
+  background: #222; /* 배경보다 살짝 밝은 박스 */
+  padding: 50px;
+  border-radius: 20px; /* 둥근 모서리 */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* 입체감을 위한 그림자 */
+}
+
+/* 왼쪽 기본 정보란 */
+.about-info {
+  flex: 1; /* 왼쪽 오른쪽 비율을 1:2 정도로 설정 */
+  min-width: 250px;
+}
+
+.about-info h3 {
+  font-size: 2rem;
+  color: #00ff00;
+  margin-bottom: 30px;
+}
+
+.about-info p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.about-info strong {
+  color: #fff;
+  display: inline-block;
+  width: 110px; /* 라벨(Birth, Email 등) 너비 고정으로 깔끔하게 정렬 */
+}
+
+/* 오른쪽 소개글 란 */
+.about-desc {
+  flex: 2;
+  border-left: 1px solid #444; /* 가운데 구분선 */
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-desc p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #ddd;
+  word-break: keep-all; /* 단어 단위로 줄바꿈 되도록 설정 */
+}
+
+.about-desc strong {
+  color: #00ff00; /* 강조하고 싶은 키워드 */
+}
+
+/* --- 모바일 화면 대응 --- */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .about-desc {
+    border-left: none; /* 세로선 제거 */
+    border-top: 1px solid #444; /* 가로선으로 변경 */
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  
+  .about-info h3 {
+    text-align: center; /* 모바일은 중앙 정렬이 깔끔함 */
+  }
+}

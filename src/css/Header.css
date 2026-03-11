@@ -1,0 +1,59 @@
+.header {
+  position: fixed; /* 스크롤해도 화면 상단에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 로고는 왼쪽, 메뉴는 오른쪽으로 쫙 밀어주기 */
+  align-items: center;
+  padding: 20px 50px; /* 위아래 20px, 양옆 50px 여백 */
+  background-color: rgba(17, 17, 17, 0.8); /* 배경을 살짝 투명하게 */
+  backdrop-filter: blur(8px); /* 뒤에 있는 글씨가 흐리게 비치는 세련된 효과 */
+  z-index: 1000; /* 헤더가 다른 요소들보다 무조건 맨 위에 오도록 설정 */
+  border-bottom: 1px solid #333;
+}
+
+/* 로고 스타일 */
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* 오른쪽 메뉴 리스트 */
+.nav-links {
+  display: flex;
+  gap: 40px; /* 메뉴 사이 간격 */
+}
+
+/* 메뉴 글씨 기본 스타일 및 마우스 올렸을 때 효과 */
+.nav-links li a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #9c9c9c; /* 기본은 약간 회색 */
+  transition: color 0.3s ease; /* 색이 부드럽게 변하도록 애니메이션 */
+}
+
+.nav-links li a:hover {
+  color: #00ff00; /* 마우스 올리면 초록색(포인트 컬러)으로 변경! */
+}
+
+/* --- 모바일 화면 대응 (768px 이하) --- */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap; /* 메뉴가 많으면 밑으로 자연스럽게 떨어지도록 */
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    font-size: 0.95rem;
+  }
+}
