@@ -79,12 +79,17 @@
     top: 50%;
     transform: translateY(-50%);
     padding-left: 5vw;
-    width: 100%;
+    width: 90%;
     z-index: 2;
   }
 
   .hero-title {
-    font-size: 2rem; /* 🔥 팩트: 모바일에 맞춰 글자 크기 축소 */
-    white-space: nowrap; /* 🔥 팩트: 공간이 좁아도 억지로 줄바꿈되는 것을 막음 ("안녕하세요," 유지) */
+    font-size: 1.8rem; /* 모바일에 맞춰 글자 크기 축소 */
+    word-break: keep-all;    /* 단어 단위로 깔끔하게 줄바꿈 되도록 유지 */
+    line-height: 1.6;
+ }
+  .hero-type-text {
+    white-space: pre-wrap; /* 화면이 좁으면 자연스럽게 밑으로 내려가도록 허용 */
+    display: inline; /* 블록 요소가 되지 않고 자연스럽게 이어지도록 변경 */
   }
 }

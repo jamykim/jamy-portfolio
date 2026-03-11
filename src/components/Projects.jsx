@@ -22,7 +22,7 @@ function Projects() {
           <p className="project-desc">
             운전자 얼굴 키포인트 및 Bbox 데이터를 활용해 졸음 상태를 실시간으로
             감지하고, <br />
-            경고 알림과 함께 인근 졸음쉼터 및 휴게소를 맵핑해 주는 온디바이스
+            경고 알림과 함께 인근 졸음쉼터 및 휴게소를 맵핑해 주는 온디바이스 AI
             모바일 앱 서비스입니다.
           </p>
           <ul className="project-tasks">
