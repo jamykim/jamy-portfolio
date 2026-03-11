@@ -34,7 +34,7 @@ function Projects() {
             </li>
             <li>
               선정된 최적화 모델을 바탕으로 네트워크 지연 없이 실시간 동작하는{" "}
-              <strong>온디바이스(On-device)</strong> 기반의 앱
+              <strong>온디바이스(On-device) AI </strong> 기반의 앱
               프론트엔드(Flutter) UI/UX 구현
             </li>
           </ul>
