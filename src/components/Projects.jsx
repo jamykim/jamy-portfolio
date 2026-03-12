@@ -137,7 +137,7 @@ function Projects() {
 
           <div className="project-links">
             <a
-              href="https://github.com/hhj0230/wildfire-prediction-web"
+              href="https://github.com/jamykim/bulsee-final.git"
               target="_blank"
               rel="noopener noreferrer"
               className="link-btn github-btn"

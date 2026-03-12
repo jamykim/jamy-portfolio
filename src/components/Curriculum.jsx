@@ -92,11 +92,11 @@ function Curriculum() {
           <div className="timeline-dot"></div>
           <div className="timeline-content">
             <span className="timeline-date">2025. 08 ~ 2025. 12</span>
-            <h3 className="timeline-title">전문학사 취득</h3>
+            <h3 className="timeline-title">경영학과 전문학사 취득</h3>
             <h4 className="timeline-org">학점은행제 (국가평생교육진흥원)</h4>
             <div className="timeline-tags">
               <span># 학점은행제</span>
-              <span># 전문학사</span>
+              <span># 경영학과</span>
             </div>
             <p className="timeline-desc">
               학점은행제도를 통해 전문학사 학위를 취득하며 자기 주도적인 학습

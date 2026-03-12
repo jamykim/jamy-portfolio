@@ -19,20 +19,37 @@ function About() {
               <strong>Location.</strong> Seoul, South Korea
             </p>
             <p>
-              <strong>Email.</strong> hhj0230@gmail.com
+              <strong>Email.</strong>{" "}
+              <a href="#contact" className="info-link">
+                hhj0230@gmail.com
+              </a>
             </p>
             <p>
-              <strong>GitHub.</strong> github.com/hhj0230
+              <strong>GitHub.</strong>{" "}
+              <a href="#contact" className="info-link">
+                github.com/jamykim
+              </a>
             </p>
             <p>
-              <strong>instagram.</strong> @h2uuzm11
+              <strong>instagram.</strong>{" "}
+              <a href="#contact" className="info-link">
+                @h2uuzm11
+              </a>
             </p>
             <p>
-              <strong>Blog.</strong> https://blog.naver.com/gomskiss
+              <strong>Blog.</strong>{" "}
+              <a
+                href="https://blog.naver.com/gomskiss"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="info-link"
+              >
+                https://blog.naver.com/gomskiss
+              </a>
             </p>
           </div>
 
-          {/* 🔥 새로 추가된 사진 영역 (왼쪽 아래) 🔥 */}
+          {/* 🔥 사진 영역  🔥 */}
           <div
             style={{
               marginTop: "40px", // 위쪽 텍스트와의 간격

@@ -29,7 +29,7 @@ function Contact() {
             </a>
             {/* 깃허브 버튼 */}
             <a
-              href="https://github.com/hhj0230"
+              href="https://github.com/jamykim"
               target="_blank"
               rel="noreferrer"
               className="contact-btn github-btn"
