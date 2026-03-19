@@ -15,7 +15,7 @@
 
 /* 로고 스타일 */
 .logo {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 800;
   cursor: pointer;
 }
@@ -28,8 +28,8 @@
 
 /* 메뉴 글씨 기본 스타일 및 마우스 올렸을 때 효과 */
 .nav-links li a {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #9c9c9c; /* 기본은 약간 회색 */
   transition: color 0.3s ease; /* 색이 부드럽게 변하도록 애니메이션 */
 }
